@@ -1,0 +1,36 @@
+.statsMain{
+   /*height: 9.5rem;*/
+  background-color: #ffffff;
+  display:flex;
+  flex-direction: column;
+  padding:0rem 6rem;
+  line-height:1.75;
+  padding-top:3rem;
+  padding-bottom:3.5rem;
+}
+
+
+.stats-heading{
+  font-weight:800;
+  font-size:1.65rem;
+  color:#666666;
+
+}
+.stats-numbers{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+.stats-block{
+  margin-top:0;
+}
+.stats-block-number{
+  margin-top:.5rem;
+  font-size:3rem;
+  margin-bottom:0;
+  color:#666666;
+}
+.stats-block-text{
+  margin-top:0;
+  font-size:1rem;
+}

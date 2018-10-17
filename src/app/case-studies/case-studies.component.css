@@ -1,0 +1,16 @@
+/* from the div container it's in
+.mainBody{
+  height:69rem;
+  width:100%;
+  background-color: #e5e5e5;
+  color:grey;
+}
+*/
+
+.caseStudies-container{
+  display:flex;
+  flex-direction:column;
+  line-height: 1.2;
+  height:100%;
+
+}

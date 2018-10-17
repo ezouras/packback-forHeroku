@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600');
+/*
+red: 	#E80000
+teal background form page: #00607F
+light white grey background: #e5e5e5
+input field text #A0A0A0
+teak background stats page: #196F8B
+gold button stats page: #FFC65D
+*/
+:root {
+font-size: 16px;
+}
+body{
+  width:100%;
+  /*height: 120rem;*/
+  margin:0;
+  font-family: 'Open Sans', sans-serif;
+  color:#585858;
+  line-height: 1.6;
+  background-color: #F1F1F1;
+}
+
+@media screen and (max-width: 950px) {
+  :root{
+    font-size:10px;
+  }
+}
+/*
+@media screen and (max-wdith:645px) {
+  :root{
+    font-size:8px;
+  }
+}
+*/

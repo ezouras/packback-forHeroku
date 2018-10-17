@@ -1,0 +1,48 @@
+<div class="requestDemoContainer">
+  <h1 class="titleText demoTitle">Tell us a little bit about your course</h1>
+  <div class="requestDemoMainInfo">
+    <p>To deliver the most helpful and specific
+    demonstration of our platform for you specific
+    needs, please tell us a little bit more information
+    about you, and your class size and subject.</p>
+    <form (ngSubmit)="onRequestDemoForm(requestDemoForm)" #requestDemoForm="ngForm" class="requestDemoForm">
+      <label for="email-address">Email Address</label>
+      <input
+        type="text"
+        name="emailAddress"
+        [ngModel]="userEmail"
+        ngModel>
+      <label for="full-name">Your Full Name</label>
+      <input
+        type="text"
+        name="fullName"
+        value="What is your full name"
+        ngModel>
+      <label for="phone">Your Phone Number</label>
+      <input
+        type="text"
+        name="phone"
+        value="###-###-####"
+        ngModel>
+      <label for="courseSubject">Subject of Your Course</label>
+      <input
+        type="text"
+        name="courseSubject"
+        value="What course do you teach?"
+        ngModel>
+      <label for="courseSize">Course Size</label>
+      <div class="selectLabel">
+        <select
+          id="enrollmentSize"
+          name="enrollmentSize"
+          value="Select a course enrollment size"
+          ngModel>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+      </div>
+      <button type="submit">Save & Request a Demo</button>
+      </form>
+  </div>
+</div>

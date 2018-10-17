@@ -1,0 +1,26 @@
+<div class="requestDemo-mainblock">
+  <div class="requestDemo-heading">
+    Interested in leanring how Packback Questions can support
+    measureable curiousity and improved engagement in your class?
+  </div>
+  <div class="requstDemo-submitDataBlock">
+    <form (ngSubmit)="onSubmitEmail()" #frm='ngForm'>
+      <input
+      (click)="onInputClick()"
+      type="text"
+        id="email"
+        name="email"
+        [ngModel]="emailInputText"
+        required
+        email
+        #email="ngModel"
+        ngModel
+        >
+      <button
+        class="submitEmailButton"
+        type="submit"
+        align="right"
+        >Request A Demo</button>
+    </form>
+  </div>
+</div>

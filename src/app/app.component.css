@@ -1,0 +1,54 @@
+/*
+red: 	#E80000
+teal background form page: #00607F
+light white grey background: #e5e5e5
+input field text #A0A0A0
+teak background stats page: #196F8B
+gold button stats page: #FFC65D
+
+all components header: #003D51
+all components footer: #595959
+  height:75rem;
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Reem+Kufi');
+
+.mainContainer{
+  display:flex;
+  flex-direction:column;
+  background-color: grey;
+  height:100%;
+  width:100%;
+
+}
+.mainHeader{
+  height: 4.2rem;
+  font-size:2.25rem;
+  background-color: #003D51;
+  color:white;
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+.header-packback{
+  position:absolute;
+  left:3.5rem;
+  top:0rem;
+}
+
+.mainBody{
+  /*height: 112.3rem;
+  //height:92.5rem;*/
+  width:100%;
+  background-color: #F1F1F1;
+  color:#939393;
+}
+.mainFooter{
+
+  text-align: center;
+  padding-top:2rem;
+  color:#dbdbdb;
+  height: 5rem;
+  width:100%;
+  background-color: #595959;
+
+}

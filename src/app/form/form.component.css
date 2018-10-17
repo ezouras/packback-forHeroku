@@ -1,0 +1,115 @@
+.titleText{
+  color:#585858;
+}
+.demoTitle{
+  font-size: 2.5rem;
+  font-weight:bold;
+
+}
+.requestDemoContainer{
+  padding-top: 2rem;
+  font-size: 1rem;
+  line-height: 2;
+  text-align: center;
+  background-color: #f2f2f2;
+  display:flex;
+  flex-direction: column;
+  height:100%;
+
+}
+.requestDemoMainInfo{
+  text-align:left;
+  padding:10rem;
+  padding-top:1rem;
+  height:100%;
+}
+p{
+  text-align: left;
+}
+
+.requestDemoForm{
+  display:flex;
+  flex-direction: column;
+}
+.requestDemoBtn{
+  margin-top:1rem;
+  background-color: teal;
+  color:white;
+}
+
+p{
+  margin-top:.4rem;
+  margin-bottom:0;
+}
+label{
+  margin-bottom:1rem;
+  margin-top:.5rem;
+  color:#585858;
+  text-transform:capitalize;
+}
+
+input{
+  height:2.5rem;
+  border-radius: .5rem;
+  border:.04rem solid #A0A0A0;
+  text-indent: 1rem;
+  font-size: 1.25rem;
+  color: #595959;
+}
+
+.selectLabel{
+  position:relative;
+  display: block;
+  vertical-align: middle;
+  overflow: hidden;
+  height:2.5rem;
+  border: .04rem solid #A0A0A0;
+  border-radius: .5rem;
+  width:100%;
+
+}
+
+select{
+  border:none;
+  color: #595959;
+  width:100%;
+  height:100%;
+  /*height:2.5rem;*/
+  text-indent: 1rem;
+  font-size: 1.25rem;
+  /*border: .04rem solid #A0A0A0;*/
+ /* needed */
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ -ms-appearance: none;
+  -o-appearance: none;
+ appearance: none;
+ background: url(https://upload.wikimedia.org/wikipedia/commons/f/f1/MediaWiki_Vector_skin_action_arrow.svg) no-repeat;
+ background-position-x: 98%;
+ background-position-y: center;
+background-size: 3rem;
+background-color: white;
+}
+
+
+/*.selectLabel:after {
+    content:url(https://upload.wikimedia.org/wikipedia/commons/f/f1/MediaWiki_Vector_skin_action_arrow.svg);
+    position: absolute; right: 0; top: 0;
+    z-index: 1;
+    text-align: center;
+    width: 10%;
+    height: 100%;
+    pointer-events: none;
+
+}
+*/
+
+
+button{
+  margin-top: 2.5rem;
+  background-color: #196F8B;
+  color:white;
+  font-size:1rem;
+  height:2.5rem;
+  border-radius: .5rem;
+}

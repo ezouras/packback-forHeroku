@@ -1,0 +1,44 @@
+.interaction-main{
+  /*height: 26rem;*/
+  display:flex;
+  flex-direction: column;
+  background-color: #F1F1F1;
+  padding:0rem 6rem;
+  line-height:1.75;
+  padding-bottom:3rem;
+
+}
+.interaction-main-heading{
+  font-weight:800;
+  font-size:1.65rem;
+  color:#00607F;
+
+}
+.interaction-info-sub-heading{
+  color:#666666;
+  font-size:.85rem;
+}
+span{
+  color:#666666;
+}
+
+.interaction-info{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  line-height:2;
+}
+.interaction-info-sub-heading{
+  margin:2rem 0;
+  font-weight:bold;
+}
+.interaction-info-sub-text{
+  width:90%;
+  font-size:.85rem;
+}
+
+@media only screen and (min-width: 650px) {
+    .interaction-info{
+        flex-wrap: nowrap;
+    }
+}
