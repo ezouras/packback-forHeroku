@@ -9,22 +9,24 @@ import { UserService } from '../user/user.service';
   styleUrls: ['./request-demo.component.css']
 })
 export class RequestDemoComponent implements OnInit {
-  emailInputText="Please enter your email"
-  @ViewChild("email") emailInput:NgModel;
+  //emailInputText="Please enter your email"
+  //@ViewChild("email") emailInput:NgModel;
+  emailInput="";
 
   constructor(private router: Router,
               private user:UserService) { }
 
   ngOnInit() {
   }
-  onInputClick(){
-    this.emailInputText=" ";
+  getInput(e){
+    this.emailInput=e.target.value;
   }
-  onSubmitEmail(){
+  submitEmail(){
     //set email using service
-    this.user.setUserEmail(this.emailInput.value);
+    this.user.setUserEmail(this.emailInput);
+    console.log(this.user.getUserEmail());
     //set email using params
-    this.router.navigate(['/form'],{queryParams:{email:this.emailInput.value}});
+    this.router.navigate(['/form'],{queryParams:{email:this.emailInput}});
   }
 
 }

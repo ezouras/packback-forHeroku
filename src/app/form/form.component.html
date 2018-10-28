@@ -5,44 +5,58 @@
     demonstration of our platform for you specific
     needs, please tell us a little bit more information
     about you, and your class size and subject.</p>
-    <form (ngSubmit)="onRequestDemoForm(requestDemoForm)" #requestDemoForm="ngForm" class="requestDemoForm">
+    <form (ngSubmit)="onRequestDemoForm(userDataForm)" #userDataForm="ngForm" class="userDataForm">
       <label for="email-address">Email Address</label>
       <input
         type="text"
         name="emailAddress"
+        placeholder="Your email address"
         [ngModel]="userEmail"
+        #email="ngModel"
+        required
+        email
         ngModel>
+        <span class="help-block" *ngIf="!email.valid && email.touched">Please enter a valid email</span>
       <label for="full-name">Your Full Name</label>
       <input
         type="text"
-        name="fullName"
-        value="What is your full name"
-        ngModel>
+        placeholder="fullName"
+        name="fullname"
+        ngModel
+        [ngModel]="firstAndLast"
+        required
+        >
       <label for="phone">Your Phone Number</label>
       <input
         type="text"
         name="phone"
-        value="###-###-####"
+        placeholder="###-###-####"
+        required
         ngModel>
       <label for="courseSubject">Subject of Your Course</label>
       <input
         type="text"
         name="courseSubject"
-        value="What course do you teach?"
+        placeholder="What course do you teach?"
         ngModel>
       <label for="courseSize">Course Size</label>
       <div class="selectLabel">
         <select
           id="enrollmentSize"
           name="enrollmentSize"
-          value="Select a course enrollment size"
-          ngModel>
+          ngModel
+          [ngModel]="defaultSelection"
+          >
+            <option value="selectSize" [ngValue]="selectorDefault" disabled selected>Select a course enrollment size</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
         </select>
       </div>
-      <button type="submit">Save & Request a Demo</button>
+      <button
+      type="submit"
+      [disabled]="!userDataForm.valid"
+      >Save & Request a Demo</button>
       </form>
   </div>
 </div>

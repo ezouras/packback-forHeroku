@@ -27,7 +27,7 @@ p{
   text-align: left;
 }
 
-.requestDemoForm{
+.userDataForm{
   display:flex;
   flex-direction: column;
 }
@@ -47,6 +47,9 @@ label{
   color:#585858;
   text-transform:capitalize;
 }
+.help-block{
+  color: red;
+}
 
 input{
   height:2.5rem;
@@ -55,6 +58,18 @@ input{
   text-indent: 1rem;
   font-size: 1.25rem;
   color: #595959;
+}
+::-webkit-input-placeholder {
+   font-style: italic;
+}
+:-moz-placeholder {
+   font-style: italic;
+}
+::-moz-placeholder {
+   font-style: italic;
+}
+:-ms-input-placeholder {
+   font-style: italic;
 }
 
 .selectLabel{
@@ -91,7 +106,9 @@ background-size: 3rem;
 background-color: white;
 }
 
-
+#enrollmentSize{
+  font-style:italic;
+}
 /*.selectLabel:after {
     content:url(https://upload.wikimedia.org/wikipedia/commons/f/f1/MediaWiki_Vector_skin_action_arrow.svg);
     position: absolute; right: 0; top: 0;
@@ -112,4 +129,10 @@ button{
   font-size:1rem;
   height:2.5rem;
   border-radius: .5rem;
+  cursor: pointer;
+}
+
+button:disabled{
+  opacity: 0.6;
+  cursor: not-allowed;
 }
