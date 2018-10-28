@@ -23,7 +23,6 @@
         placeholder="fullName"
         name="fullname"
         ngModel
-        [ngModel]="firstAndLast"
         required
         >
       <label for="phone">Your Phone Number</label>
@@ -47,7 +46,7 @@
           ngModel
           [ngModel]="defaultSelection"
           >
-            <option value="selectSize" [ngValue]="selectorDefault" disabled selected>Select a course enrollment size</option>
+            <option value="selectSize" disabled selected>Select a course enrollment size</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
